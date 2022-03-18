@@ -1,0 +1,125 @@
+﻿<Window x:Class="Aplikasi_Perpustakaan.View.KasKeluar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplikasi_Perpustakaan.View"
+        mc:Ignorable="d"
+        Title="Peminjaman" Height="710" Width="1250" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+    <Window.Resources>
+        <Style x:Key="btnNoPengguna" TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Label}">
+                        <Border Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true" CornerRadius="3" BorderBrush="White" BorderThickness="0,0,0,1">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+        <Style x:Key="TextBoxStyle1" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" SnapsToDevicePixels="True" CornerRadius="3" BorderBrush="White" BorderThickness="0,0,0,1">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="0,0,0,0.462" Background="#FF5D119C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="700"/>
+            <ColumnDefinition Width="300*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="96*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="367*"/>
+            <RowDefinition Height="194*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,-0.319,0" Background="#FF5D119C" Grid.ColumnSpan="3">
+            <Label x:Name="lblPeminjaman" Content="Kas Keluar" Margin="489.08,30,476.92,0" FontSize="28" BorderThickness="0" Foreground="White" Padding="9,5,5,5" HorizontalAlignment="Center" Width="277" HorizontalContentAlignment="Center" Height="57" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Button x:Name="btnKeluar" HorizontalAlignment="Left" VerticalAlignment="Stretch" Background="{x:Null}" Margin="35,22,0,16" BorderThickness="0,1,1,1" BorderBrush="{x:Null}" Width="112" Click="btn_back">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="/Aplikasi Perpustakaan;component/Asset/logout.png" Margin="10,0,0,0" Height="33" Width="40"/>
+                    <TextBlock Text="Keluar" Height="23" Padding="0,0,5,0" FontSize="14" Margin="0,5,32,0" Foreground="White" Width="42"/>
+
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid Margin="0,0,-0.319,5.395" Background="#FFB5B5B5" MaxHeight="10" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Grid Grid.Column="1" Margin="0" Grid.Row="3" Background="#FF7521BB">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="305*"/>
+            </Grid.RowDefinitions>
+            <Grid Margin="0,0,0.235,0" Background="#FF3A0A63" Grid.ColumnSpan="2" Height="55" Grid.RowSpan="2" VerticalAlignment="Top">
+                <Label x:Name="label_Copy1" Content="Input Kas Keluar" HorizontalAlignment="Left" Margin="20,6,0,8.899" BorderThickness="0" FontSize="15" Width="127" Padding="0,3,5,5" Foreground="White" FontWeight="SemiBold" VerticalAlignment="Center"/>
+            </Grid>
+            <Label x:Name="label_Copy3" Content="No Faktur  " HorizontalAlignment="Left" Margin="20,10.143,0,0" Grid.Row="1" VerticalAlignment="Top" BorderThickness="0" FontSize="14" Height="28" Width="70" Padding="0,5,5,5" Foreground="White"/>
+            <Label x:Name="label_Copy16" Content="Kas Keluar" HorizontalAlignment="Left" Margin="20,90.143,0,0" Grid.Row="1" VerticalAlignment="Top" BorderThickness="0" FontSize="14" Height="28" Width="75" Padding="0,5,5,5" Foreground="White"/>
+            <Label x:Name="label_Copy" Content="Keterangan" HorizontalAlignment="Left" Margin="20,170.143,0,0" Grid.Row="1" VerticalAlignment="Top" BorderThickness="0" FontSize="14" Height="28" Width="80" Padding="0,5,5,5" Foreground="White"/>
+            <TextBox x:Name="txtKasKeluar" Height="32" Margin="20,120.143,19.236,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" Style="{DynamicResource TextBoxStyle1}" Padding="0,4,0,0" Foreground="#FFA1A1A1" FontSize="14" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtKeterangan" Height="32" Margin="20,204.143,19.236,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" Style="{DynamicResource TextBoxStyle1}" Foreground="#FFA1A1A1" Padding="0,4,0,0" FontSize="14" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtIdFaktur" Height="32" Margin="20,39.667,19,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFA1A1A1" Grid.ColumnSpan="2" Background="{x:Null}" BorderBrush="White" FontSize="14" Padding="0,4,0,0" BorderThickness="0,0,0,1"/>
+            <Button x:Name="btnSimpanKK" Content="Simpan" Margin="0,261.143,0.118,0" Grid.Row="1" HorizontalContentAlignment="Left" Padding="10,0,0,1" BorderBrush="{x:Null}" Background="#FF196CE8" Foreground="White" Click="btnSimpanKK_Click_1" FontSize="14" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="3" Color="#FFCCCCCC" Opacity="0.7" ShadowDepth="2"/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

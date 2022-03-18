@@ -1,0 +1,70 @@
+﻿<Page x:Class="Aplikasi_Perpustakaan.View.dataMaster"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Aplikasi_Perpustakaan.View"
+      mc:Ignorable="d"
+      Title="dataMaster" Width="603.174" Height="378.635">
+
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden" RenderTransformOrigin="0.5,0.5" Margin="18,0,21.714,12.118">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.106"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="106*"/>
+            <ColumnDefinition Width="290*"/>
+            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Button HorizontalAlignment="Left" Height="108" Margin="19,81,0,0" VerticalAlignment="Top" Width="127" Grid.ColumnSpan="2" Background="#FFE9E9E9" BorderThickness="0" Click="Button_Click">
+            <StackPanel Height="114" Width="125" VerticalAlignment="Top">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/purple/anggota.png" Height="60" Margin="10,8,7.975,3"></Image>
+                <Label Content="Master Siswa" HorizontalContentAlignment="Center" Background="#FF5D119C" Height="46" Margin="0,0,0.042,0" FontSize="15" FontFamily="Berlin Sans FB" Padding="5,10,5,5" Foreground="White"/>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnMasterAdmin" HorizontalAlignment="Left" Height="108" Margin="121.377,81,0,0" VerticalAlignment="Top" Width="127" Background="#FFE9E9E9" BorderThickness="0" Grid.Column="1" Grid.ColumnSpan="2" Click="btnMasterAdmin_Click">
+            <StackPanel Height="114" Width="125" VerticalAlignment="Top">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/avatar50px.png" Height="60" Margin="10,8,10.042,3"/>
+                <Label Content="Master Admin" HorizontalContentAlignment="Center" Background="#FF5D119C" Height="46" Margin="0,0,0.042,0" FontSize="15" FontFamily="Berlin Sans FB" Padding="5,10,5,5" Foreground="White"/>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnMasterBuku" HorizontalAlignment="Left" Height="108" Margin="90.276,81,0,0" VerticalAlignment="Top" Width="127" Background="#FFE9E9E9" BorderThickness="0" Grid.Column="2" Click="btnMasterBuku_Click">
+            <StackPanel Height="114" Width="125" VerticalAlignment="Top">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/purple/buku.png" Height="60" Margin="10,8,7.975,3"/>
+                <Label Content="Master Buku" HorizontalContentAlignment="Center" Background="#FF5D119C" Height="46" Margin="0,0,0.042,0" FontSize="15" FontFamily="Berlin Sans FB" Padding="5,10,5,5" Foreground="White"/>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnKelas" HorizontalAlignment="Left" Height="108" Margin="90.276,244,0,0" VerticalAlignment="Top" Width="127" Background="#FFE9E9E9" BorderThickness="0" Grid.Column="2" Click="btnKelas_Click">
+            <StackPanel Height="114" Width="125" VerticalAlignment="Top">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/purple/Kelas.png" Height="60" Margin="10,8,7.975,3"/>
+                <Label Content="Kelas" HorizontalContentAlignment="Center" Background="#FF5D119C" Height="46" Margin="0,0,0.042,0" FontSize="15" FontFamily="Berlin Sans FB" Padding="5,10,5,5" Foreground="White"/>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnRak" HorizontalAlignment="Left" Height="108" Margin="120.377,244,0,0" VerticalAlignment="Top" Width="127" Background="#FFE9E9E9" BorderThickness="0" Grid.Column="1" Grid.ColumnSpan="2" Click="btnRak_Click">
+            <StackPanel Height="114" Width="125" VerticalAlignment="Top">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/purple/rak buku.png" Height="60" Margin="10,8,7.975,3"/>
+                <Label Content="Rak Buku" Background="#FF5D119C" Height="46" Margin="0,0,0.042,0" FontSize="15" FontFamily="Berlin Sans FB" Padding="5,10,5,5" Foreground="White" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+
+        </Button>
+        <Button x:Name="btnKatagori" HorizontalAlignment="Left" Height="108" Margin="26,244,0,0" VerticalAlignment="Top" Width="127" Background="#FFE9E9E9" BorderThickness="0" Grid.ColumnSpan="2" Click="btnKatagori_Click">
+            <StackPanel Height="114" Width="125" VerticalAlignment="Top">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/purple/kategori buku.png" Height="60" Margin="10,8,7.975,3"/>
+                <Label Content="Katagori Buku" HorizontalContentAlignment="Center" Background="#FF5D119C" Height="46" Margin="0,0,0.042,0" FontSize="15" FontFamily="Berlin Sans FB" Padding="5,10,5,5" Foreground="White"/>
+            </StackPanel>
+
+        </Button>
+        <TextBlock Text="Data Master" Padding="0,0,5,0" FontSize="28" Margin="19,24,-34.696,289.235" Foreground="#FF5D119C" FontFamily="Berlin Sans FB" Grid.ColumnSpan="4"/>
+
+    </Grid>
+</Page>

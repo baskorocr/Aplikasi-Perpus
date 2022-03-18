@@ -1,0 +1,63 @@
+﻿<Window x:Class="Aplikasi_Perpustakaan.View.MasterAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplikasi_Perpustakaan.View"
+        mc:Ignorable="d"
+        Title="MasterAdmin" Height="600" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" >
+    <Grid Background="#FF5D119C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="185*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="331*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Master Admin" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" Foreground="White" FontWeight="Bold" />
+        <Button x:Name="btnKeluar" Grid.Column="1" Grid.Row="1" Background="{x:Null}"   Click="btnKeluar_Click" Margin="0,10,151,10" BorderThickness="0" >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Aplikasi Perpustakaan;component/Asset/logout.png" Margin="0,0,10,0" Height="33" Width="40"/>
+                <TextBlock Text="Keluar" Height="22" Padding="0,0,5,0" FontSize="19" Margin="0,5,0,0" Foreground="White" Width="56"/>
+            </StackPanel>
+        </Button>
+        <TextBox x:Name="txtCari" Grid.Column="1" Grid.Row="3" FontSize="16" Height="25" Margin="25,0,60,0" Text="cari username" />
+        <Button x:Name="btnCari" Grid.Column="1" Grid.Row="3" Content="Cari" Foreground="White" FontSize="16" Background="Blue" Width="50" Height="25" HorizontalAlignment="Right" Click="btnCari_Click"/>
+        <ScrollViewer Grid.Column="1" Grid.Row="4" Margin="0,4,0,0">
+            <StackPanel>
+                <Label Content="Nama Depan" FontSize="16" Foreground="White" Margin="8,0,0,0"/>
+                <TextBox x:Name="txtNama" FontSize="16" Margin="10,-5,10,5" />
+                <Label Content="No Telepon" FontSize="16" Foreground="White" Margin="8,0,0,0"/>
+                <TextBox x:Name="txtNotelp" FontSize="16" Margin="10,-5,10,5"/>
+                <Label Content="Username" FontSize="16" Foreground="White" Margin="8,0,0,0"/>
+                <TextBox x:Name="txtUsername" FontSize="16" Margin="10,-5,10,5"/>
+                <Label Content="E-mail" FontSize="16" Foreground="White" Margin="8,0,0,0"/>
+                <TextBox x:Name="txtEmail" FontSize="16" Margin="10,-5,10,5"/>
+                <Label Content="Password" FontSize="16" Foreground="White" Margin="8,0,0,0"/>
+                <PasswordBox x:Name="txtPassword" FontSize="16" Margin="10,-5,10,5"/>
+                <StackPanel Orientation="Horizontal" Height="27" Margin="20,0,0,0">
+                    <Button x:Name="btnSimpan" Content="Simpan" Margin="20,0,0,1.622" Width="75" Foreground="White" Background="#FF2B4FCB" Click="btnSimpan_Click" />
+                    <Button x:Name="btnTambah" Content="Update" Margin="20,0,0,1.622" Width="75" Foreground="White" Background="#FF2B4FCB" Click="btnTambah_Click" />
+                    <Button x:Name="btnHapus" Content="Hapus" Margin="20,0,0,1.622" Width="75" Foreground="White" Background="#FFE82929" Click="btnHapus_Click" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Background="#FFB5B5B5"/>
+        <Label Grid.Column="2" Grid.Row="3" Content="Display" FontSize="16" Margin="20,0,0,-3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="White"/>
+        <ComboBox Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" Margin="90,0,0,0" VerticalAlignment="Bottom" Width="75" >
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="dgAdmin" Grid.Column="2" HorizontalAlignment="Stretch" Margin="12" Grid.Row="4" VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>

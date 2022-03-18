@@ -1,0 +1,59 @@
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.exe.config
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.exe
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.pdb
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\dataKelas.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\dataMaster.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\KasKeluar.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\KasMasuk.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Katagori.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanKasKeluar.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanKasMasuk.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\laporanMaster.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Login.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MainWindow.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MasterAdmin.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MasterBuku.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MasterSiswa.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Peminjaman.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Pengembalian.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\rakBuku.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\tentang.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\transaksi.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\App.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan_MarkupCompile.cache
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan_MarkupCompile.lref
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\dataKelas.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\dataMaster.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\KasKeluar.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\KasMasuk.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Katagori.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanKasKeluar.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanKasMasuk.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\laporanMaster.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Login.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MainWindow.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MasterAdmin.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MasterBuku.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\MasterSiswa.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Peminjaman.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\Pengembalian.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\rakBuku.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\tentang.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\transaksi.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.g.resources
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Properties.Resources.resources
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.csproj.GenerateResource.cache
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.csproj.CoreCompileInputs.cache
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.exe
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.pdb
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.csprojAssemblyReference.cache
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanAdmin.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanPeminjaman.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanPengunjung.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanSiswa.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanAdmin.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanPeminjaman.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanPengunjung.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\LaporanSiswa.baml
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\PengaturanPage.g.cs
+F:\FP PL\Aplikasi Perpustakaan\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\View\PengaturanPage.baml

@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C33912DB-FF00-4B65-BC68-30EE1ADC4D84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Aplikasi_Perpustakaan</RootNamespace>
+    <AssemblyName>Aplikasi Perpustakaan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminController.cs" />
+    <Compile Include="Controller\BukuController.cs" />
+    <Compile Include="Controller\KasController.cs" />
+    <Compile Include="Controller\KatagoriController.cs" />
+    <Compile Include="Controller\KelasController.cs" />
+    <Compile Include="Controller\LaporanRController.cs" />
+    <Compile Include="Controller\MasterAdminController.cs" />
+    <Compile Include="Controller\PeminjamanController.cs" />
+    <Compile Include="Controller\PengaturanController.cs" />
+    <Compile Include="Controller\PengembalianController.cs" />
+    <Compile Include="Controller\RakController.cs" />
+    <Compile Include="Controller\SiswaController.cs" />
+    <Compile Include="Model\AdminModel.cs" />
+    <Compile Include="Model\BukuModel .cs" />
+    <Compile Include="Model\DbConnection.cs" />
+    <Compile Include="Model\KasModel.cs" />
+    <Compile Include="Model\KatagoriModel.cs" />
+    <Compile Include="Model\KelasModel.cs" />
+    <Compile Include="Model\LaporanRModel.cs" />
+    <Compile Include="Model\MasterAdminModel.cs" />
+    <Compile Include="Model\PeminjamanModel.cs" />
+    <Compile Include="Model\PengaturanModel.cs" />
+    <Compile Include="Model\PengembalianModel.cs" />
+    <Compile Include="Model\RakModel.cs" />
+    <Compile Include="Model\SiswaModel.cs" />
+    <Compile Include="View\dataKelas.xaml.cs">
+      <DependentUpon>dataKelas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\KasKeluar.xaml.cs">
+      <DependentUpon>KasKeluar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\KasMasuk.xaml.cs">
+      <DependentUpon>KasMasuk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Katagori.xaml.cs">
+      <DependentUpon>Katagori.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporanAdmin.xaml.cs">
+      <DependentUpon>LaporanAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporanKasKeluar.xaml.cs">
+      <DependentUpon>LaporanKasKeluar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporanKasMasuk.xaml.cs">
+      <DependentUpon>LaporanKasMasuk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\laporanMaster.xaml.cs">
+      <DependentUpon>laporanMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporanPeminjaman.xaml.cs">
+      <DependentUpon>LaporanPeminjaman.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporanPengunjung.xaml.cs">
+      <DependentUpon>LaporanPengunjung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LaporanSiswa.xaml.cs">
+      <DependentUpon>LaporanSiswa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterAdmin.xaml.cs">
+      <DependentUpon>MasterAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterBuku.xaml.cs">
+      <DependentUpon>MasterBuku.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterSiswa.xaml.cs">
+      <DependentUpon>MasterSiswa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Peminjaman.xaml.cs">
+      <DependentUpon>Peminjaman.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PengaturanPage.xaml.cs">
+      <DependentUpon>PengaturanPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pengembalian.xaml.cs">
+      <DependentUpon>Pengembalian.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\rakBuku.xaml.cs">
+      <DependentUpon>rakBuku.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\tentang.xaml.cs">
+      <DependentUpon>tentang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\transaksi.xaml.cs">
+      <DependentUpon>transaksi.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="View\dataMaster.xaml.cs">
+      <DependentUpon>dataMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\transaksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\tentang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\avatar50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\data master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\lainnya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\laporan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\dataKelas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\dataMaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\KasKeluar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\KasMasuk.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Katagori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LaporanAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LaporanKasKeluar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LaporanKasMasuk.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\laporanMaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LaporanPeminjaman.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LaporanPengunjung.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LaporanSiswa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MasterAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MasterBuku.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MasterSiswa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Peminjaman.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PengaturanPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Pengembalian.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\rakBuku.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\tentang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\transaksi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\purple\admin.png" />
+    <Resource Include="Asset\purple\anggota.png" />
+    <Resource Include="Asset\purple\buku.png" />
+    <Resource Include="Asset\purple\cari buku.png" />
+    <Resource Include="Asset\purple\kategori buku.png" />
+    <Resource Include="Asset\purple\lap data master.png" />
+    <Resource Include="Asset\purple\lap denda.png" />
+    <Resource Include="Asset\purple\lap peminjaman.png" />
+    <Resource Include="Asset\purple\lokasi buku.png" />
+    <Resource Include="Asset\purple\peminjaman.png" />
+    <Resource Include="Asset\purple\pengembalian.png" />
+    <Resource Include="Asset\purple\pie-chart-1.png" />
+    <Resource Include="Asset\purple\rak buku.png" />
+    <Resource Include="Asset\purple\ubah kata sandi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\purple\Kas Keluar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\purple\Kas Masuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\purple\Kelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\business+costume+male+man+office+user+icon-1320196264882354682.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\settings_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\kk209610_clip10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\pengadaan-buku-perpustakaan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\unnamed.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

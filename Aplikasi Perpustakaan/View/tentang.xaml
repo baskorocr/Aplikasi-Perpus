@@ -1,0 +1,30 @@
+﻿<Page x:Class="Aplikasi_Perpustakaan.View.Tentang"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Aplikasi_Perpustakaan.View"
+      mc:Ignorable="d"
+      Title="Tentang" Width="603.174" Height="378.635">
+
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden" RenderTransformOrigin="0.5,0.5" Margin="18,0,21.714,12.118">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.106"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="106*"/>
+            <ColumnDefinition Width="290*"/>
+            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Tentang" Padding="0,0,5,0" FontSize="28" Margin="19,24,-34.696,289.235" Foreground="#FF5D119C" FontFamily="Berlin Sans FB" Grid.ColumnSpan="4"/>
+        <Label Grid.ColumnSpan="3" Content="    Aplikasi ini dibuat dengan sepenuh hati,&#xD;&#xA;dicoding dengan penuh kenyamanan &#xD;&#xA;Perasaan, Pikiran, Jiwa, serta Raga.&#xD;&#xA;Semoga Dapat berguna bagi semua. :)" HorizontalAlignment="Left" Height="135" Margin="18,75,0,0" VerticalAlignment="Top" Width="419" FontSize="22" FontFamily="Berlin Sans FB" Foreground="#FF5D119C"/>
+        <Label Content="-Kelompok 3" HorizontalAlignment="Left" Height="33" Margin="203.377,204,0,0" VerticalAlignment="Top" Width="134" FontSize="22" FontFamily="Berlin Sans FB" Foreground="#FF5D119C" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Page>
